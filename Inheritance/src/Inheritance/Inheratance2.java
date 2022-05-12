@@ -1,0 +1,30 @@
+package Inheritance;
+//parent class
+class fruit {
+    fruit(){
+		System.out.println("fruit class cons..");    //fruit class constructor
+	}
+	 public void taste() {
+		System.out.println("Fruits are sweet");
+	}
+	}
+// child class of fruit
+class apple extends fruit {
+	apple(){
+		//super(); // implicetly java compiler will write default super()
+		System.out.println("Apple class Cons..");
+		}
+	public void shape() {
+		System.out.println("Apple is round");
+			}
+		}
+public class Inheratance2 {
+		public static void main(String[] args) {
+				apple fr = new apple(); // object of child class
+				fr.taste(); // call method of parent class
+				fr.shape(); // call method of child class
+			}
+		
+	}
+
+
